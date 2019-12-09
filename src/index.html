@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Black Market Aliens</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+    .bg {
+      background-image: url("images/space.gif");
+      background-position: center;
+    }
+
+  </style>
+
+</head>
+<body class="bg-dark">
+
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Block Market Aliens</h1>
+    <p>Collect and sell stolen Area 51 aliens!</p>
+  </div>
+
+  <!-- Navbar-->
+  <div id="nav-placeholder"></div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+  </script>
+
+  <audio src="music/alienbeat2.mp3" autoplay loop>
+  </audio>
+
+  <div class="bg text-center">
+    <br/>
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleControls" class="carousel slide bg-secondary border border-dark" data-ride="carousel">
+          <div class="carousel-inner">
+            <h4>New Aliens!</h4>
+            <div class="carousel-item active">
+              <img class="d-sm" src="images/alien1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-sm" src="images/alien4.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-sm" src="images/alien7.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-success border border-dark" onclick="App.showAliens();">
+          <img class="d-sm card-img-top" src="images/vault.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">My Alien Vault</h4>
+            <a href="/vault.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p id="accountAddress" class="text-center text-white"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.5.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.5.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>
